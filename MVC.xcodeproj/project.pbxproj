@@ -13,6 +13,11 @@
 		E7EBB53D26105BF20055F352 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7EBB53B26105BF20055F352 /* Main.storyboard */; };
 		E7EBB53F26105BF30055F352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7EBB53E26105BF30055F352 /* Assets.xcassets */; };
 		E7EBB54226105BF30055F352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7EBB54026105BF30055F352 /* LaunchScreen.storyboard */; };
+		E7EBB54E26105D010055F352 /* AmazonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB54D26105D010055F352 /* AmazonModel.swift */; };
+		E7EBB55126105D2A0055F352 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB55026105D2A0055F352 /* Constants.swift */; };
+		E7EBB55526105D480055F352 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB55326105D480055F352 /* UserCollectionViewCell.swift */; };
+		E7EBB55626105D490055F352 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7EBB55426105D480055F352 /* UserCollectionViewCell.xib */; };
+		E7EBB55A261060900055F352 /* AmazonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB559261060900055F352 /* AmazonData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		E7EBB53E26105BF30055F352 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7EBB54126105BF30055F352 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7EBB54326105BF30055F352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7EBB54D26105D010055F352 /* AmazonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonModel.swift; sourceTree = "<group>"; };
+		E7EBB55026105D2A0055F352 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E7EBB55326105D480055F352 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
+		E7EBB55426105D480055F352 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		E7EBB559261060900055F352 /* AmazonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,50 @@
 			children = (
 				E7EBB53526105BF20055F352 /* AppDelegate.swift */,
 				E7EBB53726105BF20055F352 /* SceneDelegate.swift */,
-				E7EBB53926105BF20055F352 /* ViewController.swift */,
-				E7EBB53B26105BF20055F352 /* Main.storyboard */,
+				E7EBB55026105D2A0055F352 /* Constants.swift */,
+				E7EBB558261060820055F352 /* Data */,
+				E7EBB54C26105CEF0055F352 /* Models */,
+				E7EBB54B26105CDC0055F352 /* Views */,
+				E7EBB54A26105CD40055F352 /* Controllers */,
 				E7EBB53E26105BF30055F352 /* Assets.xcassets */,
-				E7EBB54026105BF30055F352 /* LaunchScreen.storyboard */,
 				E7EBB54326105BF30055F352 /* Info.plist */,
 			);
 			path = MVC;
+			sourceTree = "<group>";
+		};
+		E7EBB54A26105CD40055F352 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB53926105BF20055F352 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7EBB54B26105CDC0055F352 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB53B26105BF20055F352 /* Main.storyboard */,
+				E7EBB54026105BF30055F352 /* LaunchScreen.storyboard */,
+				E7EBB55326105D480055F352 /* UserCollectionViewCell.swift */,
+				E7EBB55426105D480055F352 /* UserCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7EBB54C26105CEF0055F352 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB54D26105D010055F352 /* AmazonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7EBB558261060820055F352 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB559261060900055F352 /* AmazonData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7EBB54226105BF30055F352 /* LaunchScreen.storyboard in Resources */,
+				E7EBB55626105D490055F352 /* UserCollectionViewCell.xib in Resources */,
 				E7EBB53F26105BF30055F352 /* Assets.xcassets in Resources */,
 				E7EBB53D26105BF20055F352 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +185,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EBB55126105D2A0055F352 /* Constants.swift in Sources */,
+				E7EBB55A261060900055F352 /* AmazonData.swift in Sources */,
 				E7EBB53A26105BF20055F352 /* ViewController.swift in Sources */,
 				E7EBB53626105BF20055F352 /* AppDelegate.swift in Sources */,
+				E7EBB55526105D480055F352 /* UserCollectionViewCell.swift in Sources */,
 				E7EBB53826105BF20055F352 /* SceneDelegate.swift in Sources */,
+				E7EBB54E26105D010055F352 /* AmazonModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
