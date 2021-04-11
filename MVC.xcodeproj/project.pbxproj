@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E774BFE1262369720045907A /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774BFE0262369720045907A /* Global.swift */; };
 		E7EBB53626105BF20055F352 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB53526105BF20055F352 /* AppDelegate.swift */; };
 		E7EBB53826105BF20055F352 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB53726105BF20055F352 /* SceneDelegate.swift */; };
 		E7EBB53A26105BF20055F352 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB53926105BF20055F352 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E774BFE0262369720045907A /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		E7EBB53226105BF20055F352 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EBB53526105BF20055F352 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7EBB53726105BF20055F352 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E774BFDB262369150045907A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB53526105BF20055F352 /* AppDelegate.swift */,
+				E7EBB53726105BF20055F352 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		E774BFDC262369220045907A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB55026105D2A0055F352 /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E774BFDE262369440045907A /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				E774BFE0262369720045907A /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
 		E7EBB52926105BF20055F352 = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +93,9 @@
 		E7EBB53426105BF20055F352 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				E7EBB53526105BF20055F352 /* AppDelegate.swift */,
-				E7EBB53726105BF20055F352 /* SceneDelegate.swift */,
-				E7EBB55026105D2A0055F352 /* Constants.swift */,
+				E774BFDB262369150045907A /* Delegates */,
+				E774BFDE262369440045907A /* Global */,
+				E774BFDC262369220045907A /* Constant */,
 				E7EBB558261060820055F352 /* Data */,
 				E7EBB54C26105CEF0055F352 /* Models */,
 				E7EBB54B26105CDC0055F352 /* Views */,
@@ -185,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E774BFE1262369720045907A /* Global.swift in Sources */,
 				E7EBB55126105D2A0055F352 /* Constants.swift in Sources */,
 				E7EBB55A261060900055F352 /* AmazonData.swift in Sources */,
 				E7EBB53A26105BF20055F352 /* ViewController.swift in Sources */,

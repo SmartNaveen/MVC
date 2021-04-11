@@ -39,7 +39,8 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate, 
 //        cell.userImageView.image = arrData[indexPath.item].userImage
 //        cell.userNameLabel.text = arrData[indexPath.item].userName
 //        cell.arrData = arrData[indexPath.item]
-        cell.configureCell(arrData: arrData[indexPath.item])
+//        cell.configureCell(arrData: arrData[indexPath.item])
+        cell.arrData = arrData[indexPath.row]
         return cell
     }
     
